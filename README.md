@@ -47,7 +47,14 @@ module.exports['autoreload-extend'] = {
   ignored: [
     // Ignore all files with .ts extension
     "**.ts"
-  ]
+  ],
+  extend: function () {
+    // Reload services
+    if (sails.hooks.sequelize) {
+      console.log('auto reload sequelize');
+      sails.hooks.sequelize.loadModules(function() {});
+    }
+  }
 };
 
 ```
