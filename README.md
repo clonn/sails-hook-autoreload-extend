@@ -1,4 +1,4 @@
-# sails-hook-autoreload
+# sails-hook-autoreload-extend
 
 [Sails JS](http://sailsjs.org) hook to autoreload controllers, models, services and locales when changed.
 
