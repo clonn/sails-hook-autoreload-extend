@@ -1,0 +1,33 @@
+{
+  "name": "sails-hook-autoreload-extend",
+  "version": "1.0.1",
+  "description": "Sails JS hook to autoreload controllers / service and extend modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clonn/sails-hook-autoreload-extend.git"
+  },
+  "author": "Balderdash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clonn/sails-hook-autoreload-extend/issues"
+  },
+  "homepage": "https://github.com/clonn/sails-hook-autoreload-extend",
+  "sails": {
+    "isHook": true
+  },
+  "dependencies": {
+    "chokidar": "^1.0.0"
+  },
+  "devDependencies": {
+    "sails": "~0.11.0"
+  },
+  "contributors": [
+    {
+      "name": "clonn"
+    }
+  ]
+}
