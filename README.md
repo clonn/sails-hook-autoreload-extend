@@ -35,7 +35,7 @@ ignored       | ((array\|string\|regexp\|function)) |  Files and/or directories 
 
 ```javascript
 // [your-sails-app]/config/autoreload.js
-module.exports.autoreload = {
+module.exports['autoreload-extend'] = {
   active: true,
   usePolling: false,
   dirs: [
@@ -51,5 +51,23 @@ module.exports.autoreload = {
 };
 
 ```
+
+// [your-sails-app]/.sailsrc
+```
+{
+  "generators": {
+    "modules": {}
+  },
+  "hooks": {
+    "autoreload-extend": true,
+    "orm": false,
+    "pubsub": false,
+    "grunt": false,
+    "sockets": false
+  }
+}
+
+```
+
 
 That&rsquo;s it!
