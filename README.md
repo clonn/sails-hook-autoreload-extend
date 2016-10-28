@@ -10,18 +10,18 @@ Yes, yes, you absolutely can, and if stability during development is your #1 con
 
 ### Installation
 
-`npm install sails-hook-autoreload`
+`npm install sails-hook-autoreload-extend`
 
 ### Usage
 *requires at least sails >= 0.11*
 
 Just lift your app as normal, and when you add / change / remove a model, controller or service file, *all* controllers, models, and services will be reloaded without having to lower / relift the app. This includes all blueprint routes.
 
-> `sails-hook-autoreload` will, by default, use the `migrate: alter` strategy when reloading model files unless you explicitly set the `overrideMigrateSetting` config to `false`.  This allows you to change models without losing your development data when you have `migrate: drop` set.
+> `sails-hook-autoreload-extend` will, by default, use the `migrate: alter` strategy when reloading model files unless you explicitly set the `overrideMigrateSetting` config to `false`.  This allows you to change models without losing your development data when you have `migrate: drop` set.
 
 ### Configuration
 
-By default, configuration lives in `sails.config.autoreload`.  The configuration key (`autoreload`) can be changed by setting `sails.config.hooks['sails-hook-autoreload'].configKey`.
+By default, configuration lives in `sails.config['autoreload-extend']`.  The configuration key (`autoreload-extend`) can be changed by setting `sails.config.hooks['sails-hook-autoreload-extend'].configKey`.
 
 Parameter      | Type                | Details
 -------------- | ------------------- |:---------------------------------
